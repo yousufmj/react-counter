@@ -8,8 +8,12 @@ class App extends Component {
         this.state={ counter: 1}
     }
 
-    clicked(){
-        console.log('this button was clicked')
+    increase(){
+        console.log('this button was clicked to increase')
+    }
+
+    decrease(){
+        console.log('this button was clicked to decrease')
     }
   render() {
     return (
@@ -23,8 +27,8 @@ class App extends Component {
             Current count is: {this.state.counter}
         </h2>
 
-        <button onClick={ (e) => { this.clicked() } }>Increase</button>
-        <button onClick={ (e) => { this.clicked() }}>Decrease</button>
+        <button onClick={ (e) => { this.increase() } }>Increase</button>
+        <button onClick={ (e) => { this.decrease() }}>Decrease</button>
 
       </div>
     );
