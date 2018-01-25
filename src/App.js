@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-    constructor(){
-        super();
-        this.counter = 4;
+    constructor(props){
+        super(props);
+        this.state={ counter: 1}
     }
   render() {
     return (
@@ -16,7 +16,7 @@ class App extends Component {
         </header>
 
         <div>
-            Current count is: {this.counter}
+            Current count is: {this.state.counter}
         </div>
 
       </div>
