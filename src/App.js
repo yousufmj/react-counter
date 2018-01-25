@@ -9,11 +9,11 @@ class App extends Component {
     }
 
     increase(){
-        console.log('this button was clicked to increase')
+        this.setState( ( state ) => ( { counter: state.counter + 1 } ) );
     }
 
     decrease(){
-        console.log('this button was clicked to decrease')
+        this.setState( ( state ) => ( { counter: state.counter - 1 } ) );
     }
   render() {
     return (
