@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+    counter() {
+        let $counter = 0;
+        return $counter;
+    }
   render() {
     return (
       <div className="App">
@@ -10,7 +14,11 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">React counter app</h1>
         </header>
-       
+
+        <div>
+            Current count is: {this.counter()}
+        </div>
+
       </div>
     );
   }
