@@ -7,6 +7,10 @@ class App extends Component {
         super(props);
         this.state={ counter: 1}
     }
+
+    clicked(){
+        console.log('this button was clicked')
+    }
   render() {
     return (
       <div className="App">
@@ -15,9 +19,12 @@ class App extends Component {
           <h1 className="App-title">React counter app</h1>
         </header>
 
-        <div>
+        <h2>
             Current count is: {this.state.counter}
-        </div>
+        </h2>
+
+        <button onClick={ (e) => { this.clicked() } }>Increase</button>
+        <button onClick={ (e) => { this.clicked() }}>Decrease</button>
 
       </div>
     );
